@@ -67,7 +67,7 @@ function Group(props) {
 
   return e('a', {
       className: 'panel-block',
-      href: `${props.video_url}&t=${Math.max(Math.floor(props.group[0].relative_timestamp) - 10, 0)}s`,
+      href: `${props.video_url}&t=${Math.max(Math.floor(props.group[0].relative_timestamp) - 20, 0)}s`,
       target: '_blank',
       onMouseOver: () => setCollapsed(false),
       onMouseOut: () => setCollapsed(true),
@@ -119,9 +119,11 @@ function GroupList(props) {
   }, [props.info.groups]);
 
   if (props.info.groups.length === 0) return null;
+  
+  const fromUser = props.info.description.includes('Comment from user');
 
   return e('nav', {className: 'panel'},
-    e('p', {className: 'panel-heading'}, props.info.description),
+    e('p', {className: `panel-heading ${fromUser && 'user'}`}, props.info.description),
     props.info.groups.map((g, i) => e(Group, {key: `${i}:${g.length}`, group: g, video_url: props.video_url}))
   );
 }

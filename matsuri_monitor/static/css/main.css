@@ -60,3 +60,60 @@ td:nth-child(2) {
   padding-top: calc(.5em - 1px);
   height: 2.5em;
 }
+
+.user {
+  background-color: beige;
+}
+
+@media (max-width: 750px) {
+  .content h1 {
+    margin-top: 1.5rem;
+  }
+  
+  .media {
+    flex-direction: column;
+  }
+
+  .content figure {
+    margin-left: 0;
+  }
+
+  .content figure:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .media-content.collapsed {
+    height: 140px;
+    overflow: scroll;
+  }
+
+  .media-content {
+    width: 100%;
+  }
+
+  tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  td:nth-child(1){
+    width: 100%;
+    max-width: 100%;
+    display: none;
+  }
+
+  tr:nth-child(1) td:nth-child(1){
+    font-weight: bold;
+    display: block;
+  }
+
+  td:nth-child(2) {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .panel-block:not(:last-child), 
+  .panel-tabs:not(:last-child) {
+    border-bottom: 5px solid #ededed;
+  }
+}
