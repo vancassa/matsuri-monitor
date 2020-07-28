@@ -9,8 +9,38 @@
         "skip_channels": ["UCQ0UDLQCjY0rmuxCDE38FGg"]
     },
     {
+        "type": "regex",
+        "value": "ルーナ",
+        "interval": 10,
+        "min_len": 5,
+        "notify": true,
+        "unique_author": true,
+        "skip_channels": ["UCa9Y57gfeY0Zro_noHRVrnw"]
+    },
+    {
+        "type": "regex",
+        "value": "船長",
+        "interval": 10,
+        "min_len": 5,
+        "notify": true,
+        "unique_author": true,
+        "skip_channels": ["UCCzUftO8KOVkV4wQG1vkUvg"]
+    },
+    {
         "type": "username",
         "value": "Matsuri Channel 夏色まつり",
+        "interval": 5,
+        "notify": true
+    },
+    {
+        "type": "username",
+        "value": "Luna Ch. 姫森ルーナ",
+        "interval": 5,
+        "notify": true
+    },
+    {
+        "type": "username",
+        "value": "Marine Ch. 宝鐘マリン",
         "interval": 5,
         "notify": true
     }
