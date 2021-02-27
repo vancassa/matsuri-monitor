@@ -16,15 +16,7 @@
         "notify": true,
         "unique_author": true,
         "skip_channels": ["UCa9Y57gfeY0Zro_noHRVrnw"]
-    },
-    {
-        "type": "regex",
-        "value": "船長",
-        "interval": 10,
-        "min_len": 5,
-        "notify": true,
-        "unique_author": true,
-        "skip_channels": ["UCCzUftO8KOVkV4wQG1vkUvg"]
+
     },
     {
         "type": "username",
